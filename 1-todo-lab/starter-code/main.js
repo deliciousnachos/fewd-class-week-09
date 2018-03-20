@@ -36,8 +36,6 @@ $("li").on("click",function() {
 
 
 
-
-
 // Pseudocode
 
 // Step 1
