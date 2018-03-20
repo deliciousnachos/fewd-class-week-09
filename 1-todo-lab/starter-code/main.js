@@ -19,8 +19,17 @@ function addNewListItem(newToDo) {
 
 // Step 3
 function completeItem(newToDo) {
-  onClick.event.target.newToDo;
-  alert('youdidit');
+  $('li').on('click', function(event) {
+    // event.target.classList.toggle('completed')
+    // add completed to css, or you should do this part the long way in js
+  })
+
+
+
+$("li").on("click",function() {
+    showLoader();
+    $("#loading-content").load("dataSearch.php?"+this.id, hideLoader);
+  });
 
 
 }
