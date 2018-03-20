@@ -67,3 +67,46 @@ $("li").on("click",function() {
 
 
 });
+
+
+// SOLUTION
+// console.log('Main.js is connected!');
+
+// $(function() {
+
+//   // write all your code in here!
+
+//   function changeCounter(num) {
+//     var $counter = $('#count')
+//     if (num === 0) {
+//       $counter.text(0)
+//     } else {
+//       $counter.text(parseInt($counter.text()) + num)
+//     }
+//   }
+
+//   $('#add').on('click', function(e) {
+//     e.preventDefault()
+//     var $input = $('#newItem:input')
+//     var $newListItem = $('<li>').text($input.val())
+//     $newListItem.appendTo('#todos')
+//     $newListItem.on('click', function(e) {
+//       e.target.classList.toggle('completed')
+//       if (e.target.classList.contains('completed')) {
+//         changeCounter(-1)
+//       } else changeCounter(1)
+//     })
+//     $input.val('')
+//     changeCounter(1)
+//   })
+
+//   $('#clear').on('click', function(e) {
+//     changeCounter(0)
+//     $('li').remove()
+//   })
+
+//   $('#clearCompleted').on('click', function(e) {
+//     $('.completed').remove()
+//   })
+
+// });
